@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 
 import "./globals.css";
+import Search from "@/components/Search";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={dmSans.className}>
-        <main className="max-w-7xl mx-auto bg-[#0F1117]">
+        <main className="max-w-7xl mx-auto bg-[#0F1117] relative">
           <Hero />
           {children}
           <Footer />
