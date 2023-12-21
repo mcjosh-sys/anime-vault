@@ -11,7 +11,7 @@ const Search = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.value) {
-      console.log(e.target.value);
+      console.log({search: e.target.value});
     }
   };
   return (
