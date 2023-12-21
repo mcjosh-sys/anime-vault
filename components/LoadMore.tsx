@@ -8,8 +8,11 @@ import { fetchAnime } from "@/app/action";
 let page = 2;
 
 export type AnimeCard = JSX.Element;
+type Prop = {
+  search: string
+}
 
-function LoadMore() {
+function LoadMore({search}:Prop) {
  // const {ref, inView} = useInView();
   const targetRef = useRef(null)
   const [intersecting, setIntersecting] = useState(false)
